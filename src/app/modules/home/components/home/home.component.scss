@@ -1,0 +1,40 @@
+.container{
+    background: #111111;
+
+    .content{
+
+        text-align: center;
+        vertical-align: middle;
+        height: 100vh;
+        width: 100%;
+        padding-top: 22%;
+        
+        button{
+            padding: 23px;
+            font-size: 13px;
+            display: inline-block;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            margin: 10px 10px 10px 0px;
+            background: none;
+    
+      
+        }
+              .green {
+                color: hsla(138, 95%, 45%, 1);
+                border: 3px solid hsla(138, 95%, 45%, 1);
+              }
+              
+              .red {
+                color: hsla(350, 95%, 45%, 1);
+                border: 3px solid hsla(350, 95%, 45%, 1);
+              }
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+      max-width: 100%;
+    }
+}
+

@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="form-div">
+    
+        <input type="text" [(ngModel)]="newTodo" />
+        <button (click)="add() ">Add</button>
+      
+        <p> {{result}} remaining of  {{items.length}} </p>
+      
+      <ul>
+        <li *ngFor="let item of items; let i = index">
+          <span [ngClass]="{ 'is-done': item.isDone }" (click)="toggleItem(item); getRemainingCount()"  >{{ item }}
+          </span>
+        </li>
+      </ul>
+  </div>
+</div>
+
+

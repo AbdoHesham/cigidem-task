@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="buttons-div">
+    <button
+      (click)="likeButtonClick()"
+      [ngClass]="liked ? 'like-button' : 'liked'"
+    >
+      Like | {{ numberOfLikes }}
+    </button>
+    <button
+      (click)="dislikeButtonClick()"
+      [ngClass]="disliked ? 'dislike-button' : 'disliked'"
+    >
+      Dislike | {{ numberOfDislike }}
+    </button>
+  </div>
+</div>
